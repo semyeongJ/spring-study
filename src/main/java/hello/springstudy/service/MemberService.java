@@ -13,7 +13,7 @@ public class MemberService {
 
     private final MemberRepository memberRepository;
 
-    public MemberService(MemoryMemberRepository memberRepository) {     // DI (Dependency Injection)
+    public MemberService(MemberRepository memberRepository) {     // DI (Dependency Injection)
         this.memberRepository = memberRepository;
     }
 
