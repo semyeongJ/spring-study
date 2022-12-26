@@ -2,7 +2,7 @@ package hello.springstudy.service;
 
 import hello.springstudy.domain.Member;
 import hello.springstudy.repository.MemberRepository;
-import hello.springstudy.repository.MemoryMemberRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -13,6 +13,7 @@ public class MemberService {
 
     private final MemberRepository memberRepository;
 
+    @Autowired
     public MemberService(MemberRepository memberRepository) {     // DI (Dependency Injection)
         this.memberRepository = memberRepository;
     }
